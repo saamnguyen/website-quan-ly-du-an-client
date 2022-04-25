@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
+
+:root {
+    --primary-color: #026aa7;
+    --second-color: #4e97c2;
+    --three-color: #1988c9;
+    --board-bg: #0079bf;
+    --table-board-bg: #ebecf0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+main {
+    margin-top: 44px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    margin-left: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(192, 192, 192);
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(156, 156, 156);
+}
+
+@import url("./grid.css");
+@import url("./header.css");
+@import url("./board.css");

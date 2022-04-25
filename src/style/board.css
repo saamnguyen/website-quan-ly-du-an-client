@@ -1,0 +1,149 @@
+.board {
+    display: flex;
+    height: calc(100vh - 44px);
+}
+
+.navboard {
+    width: 250px;
+    background-color: var(--primary-color);
+    border-top: 1px solid rgb(190, 190, 190);
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.navboard .list {
+    margin: 10px 0;
+}
+
+.navboard .list .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+}
+
+.navboard .list .item {
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.navboard .list .item:hover {
+    background-color: var(--second-color);
+}
+
+.navboard .list .item .left {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.navboard .list .item .right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.board-content {
+    background-color: var(--board-bg);
+    flex: 1;
+    min-width: 1000px;
+    padding: 50px 10px;
+    font-size: 15px;
+}
+
+.table-board {
+    background-color: var(--table-board-bg);
+    width: 285px;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 0 5px;
+}
+
+.table-board .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.table-board .header p {
+    font-weight: 600;
+}
+
+.table-board .header .icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.table-board .header .icon:hover {
+    background-color: #dbdada;
+}
+
+.table-board .header i {
+    font-size: 18px;
+}
+
+.table-board .footer .addCard {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
+    border-radius: 4px;
+}
+
+.table-board .footer .addCard i {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.table-board .footer .addCard:hover {
+    background-color: #dbdada;
+}
+
+.table-board .list-card {
+    max-height: 750px;
+    overflow-x: auto;
+}
+
+.card-board {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 8px 10px;
+    margin: 4px 5px;
+    box-shadow: 0 1px 0 rgb(179, 179, 179);
+    cursor: pointer;
+    transition: babackground-color 0.2s ease-in-out;
+}
+
+.card-board:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+/* css preview */
+
+.cards-drop-preview {
+    background-color: rgba(150, 150, 200, 0.1);
+    border: 1px dashed #abc;
+    margin: 5px 45px 5px 5px;
+}
+
+.drop-preview {
+    background-color: rgba(150, 150, 200, 0.1);
+    border: 1px dashed #abc;
+    margin: 5px;
+}

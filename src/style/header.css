@@ -1,0 +1,103 @@
+nav.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 44px;
+    background-color: var(--primary-color);
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+nav.header .item {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 6px;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 2px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+nav.header .item i {
+    font-size: 20px;
+}
+
+nav.header .item:hover {
+    background-color: var(--second-color);
+}
+
+div.left,
+div.right {
+    display: flex;
+    align-items: center;
+}
+
+div.left .logo h3 {
+    margin-left: 5px;
+}
+
+div.right .account {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+div.right .search {
+    height: 32px;
+    width: 250px;
+    position: relative;
+    margin-right: 10px;
+}
+
+div.right .search input {
+    height: 100%;
+    width: 100%;
+    padding: 5px 10px 5px 36px;
+    background-color: var(--three-color);
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-family: inherit;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+}
+
+div.right .search input:hover {
+    background-color: var(--second-color);
+}
+
+div.right .search input:focus {
+    background-color: #fff;
+    color: #000;
+}
+
+div.right .search input:focus + i {
+    color: #000;
+}
+
+div.right .search input:focus::placeholder {
+    color: #000;
+}
+
+div.right .search input::placeholder {
+    color: #fff;
+    font-family: inherit;
+}
+
+div.right .search i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    font-size: 20px;
+    transform: translateY(-50%);
+}
