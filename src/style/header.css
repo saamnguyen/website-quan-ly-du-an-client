@@ -1,103 +1,195 @@
 nav.header {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 44px;
-    background-color: var(--primary-color);
-    padding: 0 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #fff;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 44px;
+	background-color: var(--primary-color);
+	padding: 0 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #fff;
 }
 
 nav.header .item {
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 6px;
-    transition: background-color 0.2s ease-in-out;
-    border-radius: 2px;
-    cursor: pointer;
-    margin: 0 5px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 6px;
+	transition: background-color 0.2s ease-in-out;
+	border-radius: 2px;
+	cursor: pointer;
+	margin: 0 5px;
 }
 
 nav.header .item i {
-    font-size: 20px;
+	font-size: 20px;
 }
 
 nav.header .item:hover {
-    background-color: var(--second-color);
+	background-color: var(--second-color);
 }
 
 div.left,
 div.right {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 div.left .logo h3 {
-    margin-left: 5px;
+	margin-left: 5px;
 }
 
 div.right .account {
-    height: 32px;
-    width: 32px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-left: 10px;
-    cursor: pointer;
+	height: 32px;
+	width: 32px;
+	border-radius: 50%;
+	/* overflow: hidden; */
+	margin-left: 10px;
+	cursor: pointer;
+	position: relative;
 }
 
 div.right .search {
-    height: 32px;
-    width: 250px;
-    position: relative;
-    margin-right: 10px;
+	height: 32px;
+	width: 250px;
+	position: relative;
+	margin-right: 10px;
 }
 
 div.right .search input {
-    height: 100%;
-    width: 100%;
-    padding: 5px 10px 5px 36px;
-    background-color: var(--three-color);
-    border-radius: 2px;
-    border: none;
-    outline: none;
-    color: #fff;
-    font-family: inherit;
-    font-size: 16px;
-    transition: all 0.2s ease-in-out;
+	height: 100%;
+	width: 100%;
+	padding: 5px 10px 5px 36px;
+	background-color: var(--three-color);
+	border-radius: 2px;
+	border: none;
+	outline: none;
+	color: #fff;
+	font-family: inherit;
+	font-size: 16px;
+	transition: all 0.2s ease-in-out;
 }
 
 div.right .search input:hover {
-    background-color: var(--second-color);
+	background-color: var(--second-color);
 }
 
 div.right .search input:focus {
-    background-color: #fff;
-    color: #000;
+	background-color: #fff;
+	color: #000;
 }
 
 div.right .search input:focus + i {
-    color: #000;
+	color: #000;
 }
 
 div.right .search input:focus::placeholder {
-    color: #000;
+	color: #000;
 }
 
 div.right .search input::placeholder {
-    color: #fff;
-    font-family: inherit;
+	color: #fff;
+	font-family: inherit;
 }
 
 div.right .search i {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    font-size: 20px;
-    transform: translateY(-50%);
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	font-size: 20px;
+	transform: translateY(-50%);
+}
+
+.account {
+	position: relative;
+}
+
+.loggin {
+	position: absolute;
+
+	will-change: top, left;
+	width: 304px;
+	left: -270px;
+	top: 48px;
+	border-radius: 3px;
+	box-shadow: 0 8px 16px -4px rgb(9 30 66 / 25%), 0 0 0 1px rgb(9 30 66 / 8%);
+	display: none;
+}
+
+.loggin__components {
+	margin-bottom: 8px;
+	padding: 0 12px;
+	display: flex;
+	flex-direction: column;
+}
+
+.loggin__components::after {
+	background-color: rgba(9, 30, 66, 0.13);
+	content: " ";
+	display: block;
+	height: 1px;
+	margin: 8px auto;
+	width: calc(100% - 20px);
+}
+
+.loggin__title {
+	color: #000000;
+	text-align: center;
+	font-size: 14px;
+	line-height: 40px;
+	padding: 0 16px;
+	font-weight: 400;
+	white-space: nowrap;
+	letter-spacing: 1px;
+}
+
+.loggin__profile {
+	display: flex;
+	flex-direction: column;
+}
+
+.loggin__profile-wrapper {
+	display: flex;
+	margin: 6px 0;
+}
+
+.loggin__profile-wrapper img {
+}
+
+.loggin__profile_img {
+	max-width: 40px;
+	max-height: 40px;
+	border-radius: 50%;
+	margin-left: 12px;
+}
+
+.loggin__profile_title {
+	color: #5e6c84;
+	margin-left: 6px;
+}
+
+.loggin__profile_title-name {
+	color: rgb(69, 69, 69);
+	line-height: 20px;
+	font-weight: 400;
+	margin-bottom: 4px;
+}
+
+.loggin__profile_title-email {
+	color: #5e6c84;
+	font-size: 9pt;
+	color: #b3bac5;
+}
+
+.loggin__add {
+	color: #000000;
+	padding: 6px 12px;
+	cursor: pointer;
+}
+
+.loggin__add:hover {
+	background: rgba(9, 30, 66, 0.04);
 }
