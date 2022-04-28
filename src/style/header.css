@@ -10,6 +10,7 @@ nav.header {
 	align-items: center;
 	justify-content: space-between;
 	color: #fff;
+	z-index: 100000;
 }
 
 nav.header .item {
@@ -117,6 +118,8 @@ div.right .search i {
 	border-radius: 3px;
 	box-shadow: 0 8px 16px -4px rgb(9 30 66 / 25%), 0 0 0 1px rgb(9 30 66 / 8%);
 	display: none;
+	z-index: 100000;
+	background-color: #fff;
 }
 
 .hidden {

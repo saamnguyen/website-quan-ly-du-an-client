@@ -82,7 +82,7 @@ const Header = () => {
 						</div>
 						<div className="loggin__components">
 							<Link
-								to={""}
+								to="/login"
 								className="loggin__add"
 								onClick={() => toggleLoggin()}
 							>
