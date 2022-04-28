@@ -119,6 +119,10 @@ div.right .search i {
 	display: none;
 }
 
+.hidden {
+	display: block;
+}
+
 .loggin__components {
 	margin-bottom: 8px;
 	padding: 0 12px;

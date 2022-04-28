@@ -1,14 +1,20 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import clsx from "clsx";
 
 import { Login } from "../pages";
 
 const Header = () => {
-	const [loggin, setLoggin] = useState(false);
+	const [hidden, setHidden] = useState(false);
 
 	const toggleLoggin = () => {
-		setLoggin(!loggin);
-		console.log(loggin);
+		setHidden(!hidden);
+		console.log(hidden);
+	};
+
+	const removeLoggin = () => {
+		setHidden(false);
+		console.log(hidden);
 	};
 
 	return (
@@ -37,10 +43,12 @@ const Header = () => {
 				</div>
 				<div className="account">
 					<img
+						onClick={() => toggleLoggin()}
+						onfocusout={() => removeLoggin()}
 						src="https://scontent.fhan14-1.fna.fbcdn.net/v/t1.6435-9/204612696_513858903381871_4463796854127515799_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=_JkJDGptUwoAX9BvAlc&_nc_ht=scontent.fhan14-1.fna&oh=00_AT_WsQ9FSJpcm8rPyqdKlaU1243bUBGUgbUFJTtJgIvxhQ&oe=62847331"
 						alt=""
 					/>
-					<div className="loggin">
+					<div className={clsx("loggin", hidden && "hidden")}>
 						<div className="loggin__components">
 							<p className="loggin__title">Account</p>
 						</div>
