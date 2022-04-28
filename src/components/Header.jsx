@@ -17,11 +17,17 @@ const Header = () => {
 		console.log(hidden);
 	};
 
+	const toggleAlert = () => {
+		alert("Chức năng này sẽ được bổ sung sau!!!");
+	};
+
 	return (
 		<nav className="header">
 			<div className="left">
 				<div className="item menu">
-					<i className="bx bxs-grid"></i>
+					<Link to="/board/1">
+						<i className="bx bxs-grid"></i>
+					</Link>
 				</div>
 				<Link to={"/"}>
 					<div className="item logo">
@@ -36,10 +42,10 @@ const Header = () => {
 					<i className="bx bx-search"></i>
 				</div>
 				<div className="item">
-					<i className="bx bx-bell"></i>
+					<i className="bx bx-bell" onClick={() => toggleAlert()}></i>
 				</div>
 				<div className="item">
-					<i className="bx bx-error-circle"></i>
+					<i className="bx bx-error-circle" onClick={() => toggleAlert()}></i>
 				</div>
 				<div className="account">
 					<img
@@ -68,17 +74,31 @@ const Header = () => {
 									</p>
 								</div>
 							</div>
-							<p className="loggin__add">Add another account</p>
+							<p className="loggin__add" onClick={() => toggleAlert()}>
+								Add another account
+							</p>
 						</div>
 						<div className="loggin__components">
-							<a className="loggin__add">Profile and visibility</a>
-							<a className="loggin__add">Activity</a>
-							<a className="loggin__add">Cards</a>
-							<a className="loggin__add">Settings</a>
+							<a className="loggin__add" onClick={() => toggleAlert()}>
+								Profile and visibility
+							</a>
+							<a className="loggin__add" onClick={() => toggleAlert()}>
+								Activity
+							</a>
+							<a className="loggin__add" onClick={() => toggleAlert()}>
+								Cards
+							</a>
+							<a className="loggin__add" onClick={() => toggleAlert()}>
+								Settings
+							</a>
 						</div>
 						<div className="loggin__components">
-							<a className="loggin__add">Help</a>
-							<a className="loggin__add">Shortcuts</a>
+							<a className="loggin__add" onClick={() => toggleAlert()}>
+								Help
+							</a>
+							<a className="loggin__add" onClick={() => toggleAlert()}>
+								Shortcuts
+							</a>
 						</div>
 						<div className="loggin__components">
 							<Link

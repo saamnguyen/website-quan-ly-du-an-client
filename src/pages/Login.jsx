@@ -1,6 +1,11 @@
 import React from "react";
 
 const Login = () => {
+	const form = (e) => {
+		e.preventDefault();
+		console.log("form");
+	};
+
 	return (
 		<>
 			<div className="login">
@@ -33,7 +38,9 @@ const Login = () => {
 							</div>
 						</div>
 						<form action="post" className="login__form">
-							<button>Đăng Xuất</button>
+							<button type="submit" onClick={(e) => form(e)}>
+								Đăng Xuất
+							</button>
 						</form>
 						<div className="login__footer">
 							<a href="">
