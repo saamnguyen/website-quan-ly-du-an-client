@@ -182,3 +182,57 @@ ul li:first-of-type a._3FGea1Woz0t99E {
 	font-size: 12px;
 	flex: 1 1 auto;
 }
+
+.home__main {
+	margin-top: 40px;
+	padding-left: 45px;
+	width: 420px;
+}
+
+.home__main-body {
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgb(9 30 66 / 25%), 0 0 0 1px rgb(9 30 66 / 8%);
+	margin-bottom: 16px;
+	position: relative;
+	width: 100%;
+}
+
+.home__main-bg {
+	background-color: #fff;
+	height: 108px;
+	background-image: url(https://a.trellocdn.com/prgb/dist/images/home/orientation/no-content.e55b3540e5c1f06a51d7.svg);
+}
+
+._3M1_NyFgE9sVvK {
+	border-radius: 4px 4px 0 0;
+	min-height: 100px;
+	width: 100%;
+}
+
+.home__main-text {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;
+	padding: 16px;
+	width: 100%;
+}
+
+.home__main-text span {
+	text-align: center;
+}
+
+.home__main-text span:first-child {
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 0;
+	line-height: 24px;
+}
+
+.home__main-text span:last-child {
+	font-size: 14px;
+	line-height: 20px;
+	margin: 10px 0;
+}
